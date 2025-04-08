@@ -1,0 +1,516 @@
+
+body{
+    background-color: #1F1F1E;
+    display: flex;
+    justify-content: center;
+
+}
+#goButton {
+    /*display: grid;
+    place-items: center; /* centre verticalement ET horizontalement */
+    height: 10vh;
+    background-color: #F2AB01;
+    border-radius: 28px 28px 28px 28px;
+    width: 35vh;
+    margin: auto;
+    bottom: 1;
+    align: center;
+    font-size: 16px;
+    color: #2CB3B8;
+    max-width: 1200px;
+    padding: 2rem;
+
+  }
+  .photo {
+    /*display: grid;
+    place-items: center; /* centre verticalement ET horizontalement */
+    height: auto;
+    max-width: 1200px;
+    align:center;
+    padding: 2rem;
+    margin: auto;
+   
+  }
+  .photo img{
+    border-radius: 50px 50px 50px 50px;
+  }
+  h1{
+    color: #2CB3B8;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 34px;
+    
+  }
+  h2{
+    color: #206B6E;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  #cv-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+  }
+  .container{
+    position: relative;
+    background-color: white;
+    width: 595px;  
+    height: 842px; 
+  }
+
+  .cote-gauche{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #333333;
+    z-index: 0 ;
+  }
+  .triangle{
+    position: absolute;
+    width: 100%;
+    height: 166px;
+    background: #F2AB01;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    z-index: 1;
+  }
+  .photo1 img{
+    position: absolute;
+    width: 92px;
+    height: 97px;
+    object-fit: cover;
+    left: 100px;
+    top: 85px;
+    transform: translate(-50%, -50%); 
+    border-radius: 50% 50% 50% 0;
+    border: white solid 4px;
+    z-index: 2 ;
+  } 
+  .cote-gauche .tg{
+    position: absolute;
+    width: 1px;  /* Épaisseur de la ligne*/ 
+    height: 100%;  /* Hauteur de la ligne */
+    background-color: white;  /* Couleur de la ligne */
+    /* margin: 20px 0;  Espacement autour de la ligne */
+    margin-left: 5%;
+    z-index: 0;
+  }
+  .contact{
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    z-index: 3;
+  }
+  .liste{
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* important pour un affichage vertical */
+    gap: 10px; /* espace vertical entre les <li> */
+   }
+   .cote-gauche .t1{
+    position: absolute;
+    width: 70%;  /* Épaisseur de la ligne*/ 
+    height: 1px;  /* Hauteur de la ligne */
+    background-color: white;  /* Couleur de la ligne */
+    /* margin: 20px 0;  Espacement autour de la ligne */
+    margin-top: 349px;
+    margin-left: 50px;
+    margin-right: 10px;
+    z-index: 3;
+   }
+   .references{
+    position: absolute;
+    top: 366px;
+    left: 10px;
+    z-index: 3;
+   }
+   .bg-contact{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    left: 32px;
+    top: 11px;
+   }
+   .text-contact{
+    position: absolute;
+    left: 70px;
+    top: 16px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+   }
+   .logo-contact{
+    position: absolute;
+    width: 31px;
+    height: 28px;
+    left: 7px;
+    top: 7px;
+   }
+   .bg-tel{
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    top: 55px;
+    left: 35px;
+   }
+   .text-tel{
+    position: absolute;
+    left: 70px;
+    top: 60px;
+    font-family: 'Inria Sans';
+    color: white;
+    width: 80px;
+   }
+   .logo-tel{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 2px;
+    left: 2px;
+   }
+   .bg-mail{
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    top: 89px;
+    left: 35px;
+   }
+   .logo-mail{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 2px;
+    left: 2px;
+   }
+   .text-mail{
+    position: absolute;
+    top: 92px;
+    left: 70px;
+    font-family: 'Inria Sans';
+    color: white;
+   }
+   .bg-local{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 130px;
+    left: 35px;
+   }
+   .logo-local{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    top: 2px;
+    left: 4px;
+
+   }
+   .text-local{
+    position: absolute;
+    top: 131px;
+    left: 69px;
+    font-family: 'Inria Sans';
+    color: white;
+   }
+   .bg-references{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    left: 32px;
+    top: 11px;
+   }
+   .text-references{
+    position: absolute;
+    left: 70px;
+    top: 16px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Inter';
+    color: white;
+   }
+   .logo-ref{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+   }
+   .sory{
+    position: absolute;
+    top: 58px;
+    left: 33px;
+    line-height: 1.6;
+   }
+   .oumar{
+    position: absolute;
+    top: 142px;
+    left: 33px;
+    line-height: 1.6;
+   }
+   .oumar, .sory{
+    color: white;
+   }
+   .cote-gauche .t2{
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    background-color: white;
+    margin-top: 601px;
+    margin-left: 50px;
+    margin-right: 10px;
+    z-index: 3;
+   }
+   .education{
+    position: absolute;
+    top: 614px;
+    left: 7px;
+   }
+   .text-educ{
+    position: absolute;
+    top: 15px;
+    left: 71px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Inter';
+    color: white;
+   }
+   .bg-educ{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    left: 32px;
+    top: 11px;
+   }
+   .logo-educ{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    
+   }
+   .esgic{
+    position: absolute;
+    top: 51px;
+    left: 33px;
+    color: white;
+    font-family: 'Inria sans';
+  }
+   .iug{
+    position: absolute;
+    top: 129px;
+    left: 33px;
+    color: white;
+    font-family: 'Inria sans';
+    
+  }
+   .triangle1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24%;
+    height: 100px;
+    background: #F2AB01;
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+   }
+   .td{
+    position: relative;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    left: 22px;
+}
+   .profile{
+    position: absolute;
+    top: 26px;
+    right: 1px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2px;
+    text-align: center;
+    color: #000000;
+    background-color:  lightgray;
+    width: 269px;
+   }
+   
+  .cote-gauche .cercle1{
+    position: absolute;
+    width: 8px;
+    height: 30px;
+    background-color: #F2AB01;
+    top: 40px;
+    left: 14px;
+    border-radius: 40%;
+  }
+  .cote-droite{
+    position: absolute;
+    height: 842px;
+    width: 50%;
+    top: 0px;
+    right: 0;
+  }
+  .moi{
+    position: absolute;
+    top: 128px;
+    padding-left: 45px;
+    padding-right: 30px;
+    font-size: 0.6rem;
+    TEXT-ALIGN: justify;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+  }
+  .moi span{
+    position: absolute;
+    font-size: 1rem;
+    left: 90px;
+    top: 12px;
+    width: 223px;
+
+  }
+  .moi p{
+    position: absolute;
+    top: 45px;
+    width: 223px;
+    font-family: 'Inria sans';
+    font-style: normal;
+    font-size: 10px;
+    line-height: 15px;
+
+  }
+  .bg-propos img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .exp{
+    position: absolute;
+    padding-left: 45px;
+    padding-right: 30px;
+    font-size: 0.6rem;
+    TEXT-ALIGN: justify;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    top: 303px;
+  }
+  .exp .expe{
+    position: absolute;
+    font-size: 1rem;
+    left: 90px;
+    top: -18px;
+  }
+  .exp p span{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .exp p {
+    width: 220px;
+    font-family: 'Inria sans';
+    font-style: normal;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .logo-propos{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+  }
+  .bg-propos{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .exp img{
+    position: absolute;
+    left: 45px;
+    top: -30px;
+    width: 30px;
+    height: 30px;
+  }
+  .comp{
+    position: absolute;
+    top: 481px;
+    left: 43px;
+    width: 30px;
+    height: 30px;
+  }
+  .text-comp{
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    top: 491px;
+    left: 90px;
+}
+  .nvhtml{
+    position: absolute;
+    width: 70px;
+    height: 7px;
+    background-color: #000000;
+    top: 547px;
+    left: 165px;
+  }
+  .html{
+    position: absolute;
+    width: 50px;
+    height: 7px;
+    background-color: #F2AB01;
+  }
+
+    /* 
+ /* .contenaire .cote-gauche{
+   position: relative;
+   background: #333333;
+   width: 100%;
+   /* padding: 1rem; 
+  }
+  .contenaire .cote-droite{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    /* padding: 40px; 
+   }
+   }
+    
+   } 
+   
+   .contact, .references, .education{
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-top: 0%;
+
+   }
+   
+   .bloc{
+    white-space: normal; /* comportement par défaut 
+    word-wrap: break-word;
+    overflow-wrap: break-word
+   }
+   */
+  
+  
+
