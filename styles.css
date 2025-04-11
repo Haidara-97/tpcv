@@ -7,48 +7,62 @@ body{
 }
 #cv-body{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background-color: black;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 #ind-h1{
   color: #2CB3B8;
   text-align: center;
-  top: 3%;
-  font-size: 34px
+  margin-top: 3vh;
+  font-size: 2.5rem;
 
 }
 .photo img{
   border-radius: 50px 50px 50px 50px;
+  max-width: 100%;
+  height: auto;
 }
 #ind-h2{
   color: #206B6E;
-  text-align: center;
-  margin-bottom: 10%;
+ text-align: center;
+  margin-bottom: 8vh;
+  font-size: 1.5rem;
 }
 #goButton {
     /*display: grid
     place-items: center; /* centre verticalement ET horizontalement */
-    height: 10vh;
-    background-color: #F2AB01;
-    border-radius: 28px 28px 28px 28px;
-    width: 35vh;
-    margin: auto;
-    bottom: 1px;
-    font-size: 16px;
-    color: #2CB3B8;
-    max-width: 1200px;
-    padding: 2rem;
+    height: auto;
+  background-color: #F2AB01;
+  border-radius: 2rem;
+  width: 40vw;
+  max-width: 300px;
+  min-width: 180px;
+  font-size: 1rem;
+  color: #2CB3B8;
+  padding: 1rem 2rem;
+  margin: auto;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
 
+  }
+  #goButton:hover {
+    background-color: #e09d01;
   }
   .photo {
     /*display: grid;
     place-items: center; /* centre verticalement ET horizontalement */
-    height: auto;
-    max-width: 1200px;
+    max-width: 90vw;
     padding: 2rem;
     margin: auto;
+    text-align: center;
   }
   
   
@@ -61,6 +75,7 @@ body{
     height: 842px; 
     /* justify-content: center; */
     margin: auto;
+    box-sizing: border-box;
   }
 
   .cote-gauche{
@@ -832,17 +847,191 @@ body{
 
 
   /* ..................................................................................... */
-  @media(max-with: 600px){
-    .profile{
+  @media screen and (max-width: 768px) {
+    .container {
+      position: relative;
+      overflow: hidden;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .cote-gauche{
+      position:absolute;
+      width: 50%;
+      left: 0%;
+      height: 100%;
+    }
+    .cote-droite {
+      width: 50%;
+      position:absolute;
+      height: 100%;
+      left: 50%;
+      top: 0%;
+    }
+  
+    .photo1 img {
       position: absolute;
-      width: 263px;
+      height: 9%;
+      width: 37%;
+      left: 44%;
+      top: 10%;
+      border-radius: 50% 50% 50% 0;
+      border: white solid 4px;
+      z-index: 2;
+    }
+    .tg{
+      position: absolute;
+      width: 1px;  
+      height: 100%; 
+      background-color: white;  
+      margin-left: 5%;
+      z-index: 0;
+
+    }
+    .triangle{
+      position: absolute;
+      width: 112%;
+      height: 19%;
+      background: var(--bgc2);
+      clip-path: polygon(0 0, 0 100%, 100% 0);
+      z-index: 1;
+    }
+    .oumar{
+      position: absolute;
+      top: 142px;
+      left: 33px;
+      line-height: 1.6;
+    }
+  
+    .contact{
+      position: absolute;
+        top: 19%;
+        left: -7%;
+        z-index: 3;
+    }
+    .text-tel, .text-mail, .text-local{
+      font-size: 52%;
+      white-space: normal;
+      word-wrap: break-word;
+      display: block;
+    }
+    .references{
+      position: absolute;
+        top: 44%;
+        left: -16%;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+    .education {
+      position: absolute;
+        top: 71%;
+        left: -17%;
+        margin: 20px;
+    }
+  
+    .text-contact,
+    .text-references,
+    .text-educ {
+      left: 72px;
+        top: 20px;
+        font-size: 10px;
+    }
+    .oumar{
+      color: white;
+      font-size: 52%;
+    } .sory{
+      color: white;
+      font-size: 52%;
      }
-     #btntele {
+     .esgic, .iug{
+      color: white;
+      font-size: 52%;
+    }
+  
+    .moi,
+    .exp {
+      position: relative;
+      top: auto;
+      padding: 20px;
+    }
+  
+    .moi span,
+    .moi p,
+    .exp .expe,
+    .exp p {
+      position: relative;
+      left: auto;
+      top: auto;
+    }
+  
+    .comp,
+    .text-comp {
+      position: relative;
+      top: auto;
+      left: auto;
+      margin-top: 20px;
+    }
+  
+    .nvhtml,
+    .nvjava,
+    .nvfigma,
+    .nvadobe {
+      position: relative;
+      top: auto;
+      left: auto;
+      margin-top: 5px;
+      width: 100%;
+      max-width: 200px;
+    }
+  
+    .hcss,
+    .js,
+    .fig,
+    .ado {
+      position: relative;
+      left: auto;
+      top: auto;
+    }
+    .t1{
       position: absolute;
-      border-radius: 50%;
-      width: 19px;
-      height: 20px;
-      top: 7px;
-      left: 9px;
+      width: 70%;
+      height: 1px;
+      background-color: white;
+      margin-top: 200%;
+      margin-left: 14%;
+      margin-right: 14%;
+      z-index: 3;
+    }
+    .t2 {
+      position: absolute;
+      width: 70%;
+      height: 1px;
+      background-color: white;
+      margin-top: 601px;
+      margin-left: 50px;
+      margin-right: 10px;
+      z-index: 3;
+    }
+    .tg,
+    .td,
+    .cdca,
+    .cdcb,
+    .cdcc,
+    .cdcd,
+    .cdce,
+    .cdcf,
+    .cdcg,
+    .cgca,
+    .cgcb,
+    .cgcc,
+    .cgcd,
+    .cgce,
+    .cgcf,
+    .cgcg,
+    .cgch,
+    .cgci,
+    .cgcj {
+      display: none;
+    }
   }
-  }
+  

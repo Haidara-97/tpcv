@@ -9,15 +9,15 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
-        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" 
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 
 </head>
 
 <body>
-    <div class="container" id="section">
+    <div class="container" id="moncont" >
         <div class="cote-gauche">
             <div class="triangle"></div>
             <div class="photo1">
@@ -129,9 +129,12 @@
             <div class="cdce"></div>
             <div class="cdcf"></div>
             <div class="cdcg"></div>
-            <a href="index.html" id="retour"><img src="retour.png" alt="retour en arrière" id="imgR"></a>
+            <div id="bouton">
+                <a href="index.html" id="retour"><img src="retour.png" alt="retour en arrière" id="imgR"></a>
             <input type="color" id="couleur" value="#F2AB01" onchange="changeColor (this.value)">
-            <button id="tele" type="button"><img src="tele.png" id="btntele" alt="bouton telechargement"></button>
+            <button id="tele" type="button" onclick="download()"><img src="tele.png" id="btntele" alt="bouton telechargement"></button>
+            </div>
+           
         </div>
     </div>
     <script src="script.js" ></script>

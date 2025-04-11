@@ -9,38 +9,42 @@ document.getElementById("goButton").addEventListener("click", function() {
      //bouton telrcharger
       const principale = document.getElementById('tele');
       principale.addEventListener('click', function() {
-       const element = document.querySelector('#section');
+       const element = document.querySelector('.container');
      html2pdf().from(element).save('mon_cv.pdf');
   });
-  // document.addEventListener('DOMContentLoaded', function () {
-  //   const principale = document.getElementById('tele');
-  //   principale.addEventListener('click', function () {
-  //     const element = document.querySelector('#section');
-  //     html2pdf().from(element).save('mon_cv.pdf');
-  //   });
-  // });
+//  document.addEventListener('DOMContentLoaded', function () {
+//     const principale = document.getElementById('tele');
+//     principale.addEventListener('click', function () {
+//     const element = document.querySelector('.container');
+//     html2pdf().from(element).save('mon_cv.pdf');
+//    });
+//   });
   
-  //   document.addEventListener("DOMContentLoaded", function () {
-  //     const btn = document.getElementById("tele");
-  
-  //     btn.addEventListener("click", function () {
-  //         // Sélectionne le contenu que tu veux exporter (ici tout le contenu de .cv)
-  //         const element = document.querySelector(".cv");
-  
-  //         // Options de configuration pour html2pdf
-  //         const opt = {
-  //             margin:       0,
-  //             filename:     'MyFile.pdf',
-  //             image:        { type: 'jpeg', quality: 0.98 },
-  //             html2canvas:  { scale: 2, useCORS: true, scrollX: 0, scrollY: 50 },
-  //             jsPDF:        { unit: 'cm', format: 'a4', orientation: 'portrait' }
-  //         };
-  
-  //         // Lance la conversion HTML → PDF
-  //         html2pdf().set(opt).from(element).save();
-  //         console.log("Cv téléchargé !")
-  //     });
-  // });
+   
+  function download(){
+    var element = document.getElementById('moncont');
+    document.getElementById('bouton').style.display = 'none';
+var opt = {
+  margin:       0,
+  filename:     'moncv.pdf',
+  image:        { type: 'png', quality: 0.98 },
+  html2canvas:  { 
+    scale: 2,
+    scrollY: 0,
+    useCORS: true,
+     
+  },
+  jsPDF:        { 
+    unit: 'px', 
+    format: [595,842], 
+    orientation: 'portrait' }
+};
+
+// New Promise-based usage:
+html2pdf().set(opt).from(element).save();
+  }
+
+
     // document.addEventListener("DOMContentLoaded", function () {
     //   const bouton = document.getElementById("tele");
     
