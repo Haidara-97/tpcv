@@ -890,7 +890,7 @@ body{
     }
     .triangle{
       position: absolute;
-      width: 112%;
+      width: 100%;
       height: 19%;
       background: var(--bgc2);
       clip-path: polygon(0 0, 0 100%, 100% 0);
@@ -906,7 +906,7 @@ body{
     .contact{
       position: absolute;
         top: 19%;
-        left: -7%;
+        left: -1%;
         z-index: 3;
     }
     .text-tel, .text-mail, .text-local{
@@ -918,14 +918,14 @@ body{
     .references{
       position: absolute;
         top: 44%;
-        left: -16%;
+        left: -10%;
         margin-left: 11%;
         margin-right: 11%;
     }
     .education {
       position: absolute;
         top: 71%;
-        left: -17%;
+        left: -8%;
         margin: 20px;
     }
   
@@ -947,50 +947,155 @@ body{
       color: white;
       font-size: 52%;
     }
+    .profile{
+        position: absolute;
+        align-items: center;
+        top: 2%;
+        right: 0%;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 2px;
+        text-align: center;
+        color: #000000;
+        background-color: lightgray;
+        width: 92%;
+    }
   
     .moi,
-    .exp {
-      position: relative;
-      top: auto;
+     {
+      position: absolute;
+      top: 12%;
+      padding: 20px;
+     }
+    .exp{
+      position: absolute;
+      top: 30%;
       padding: 20px;
     }
-  
-    .moi span,
-    .moi p,
-    .exp .expe,
-    .exp p {
-      position: relative;
-      left: auto;
-      top: auto;
+    .competence{
+      position: absolute;
+      top: 56%;
+      padding: 20px;
+    }
+    .bg-propos{
+        position: absolute;
+        align-items: start;
+        left: 37%;
+    } .exper{
+        position: absolute;
+        align-items: start;
+        left: 13%;
+        top: 11%;
+      } 
+      .comp{
+        position: absolute;
+        align-items: start;
+        left: 74%;
+        top:50%;
+
     }
   
-    .comp,
+    .moi span{
+      position: absolute;
+      left: 97%;
+      top: 10PX;
+      font-size: 10px;
+    }
+    .exp .expe{
+      position: absolute;
+        left: 35%;
+        top: 15%;
+        font-size: 10px;
+    }
     .text-comp {
-      position: relative;
-      top: auto;
-      left: auto;
-      margin-top: 20px;
+      position: absolute;
+      left: 184%;
+      top: 74%;
+      font-size: 10px;
+    }
+    .moi{
+      position: absolute;
+      top:11%
+    }
+    .moi p{
+      position: absolute;
+        top: 25px;
+        width: 199%;
+        font-family: 'Inria sans';
+        font-style: normal;
+        font-size: 10px;
+        line-height: 15px;
+  
+    }
+    .exp p {
+      width: 92%;
+      font-family: 'Inria sans';
+      font-style: normal;
+      font-size: 10px;
+      line-height: 15px;
+      margin-top: 44px;
+      left: 11%;
+      margin-left: 12%;
+    }
+    .atout{
+      position: absolute;
+      
     }
   
-    .nvhtml,
-    .nvjava,
-    .nvfigma,
+    .nvhtml{
+        position: absolute;
+        top: 147%;
+        left: 334%;
+        margin-top: 5px;
+        width: 100%;
+        max-width: 200px;
+    }
+    .nvjava{
+        position: absolute;
+        top: 186%;
+        left: 334%;
+        margin-top: 5px;
+        width: 100%;
+        max-width: 200px;
+    }
+    .nvfigma{
+        position: absolute;
+        top: 229%;
+        left: 334%;
+        margin-top: 5px;
+        width: 100%;
+        max-width: 200px;
+    }
     .nvadobe {
-      position: relative;
-      top: auto;
-      left: auto;
-      margin-top: 5px;
-      width: 100%;
-      max-width: 200px;
+        position: absolute;
+        top: 269%;
+        left: 334%;
+        margin-top: 5px;
+        width: 100%;
+        max-width: 200px;
     }
   
-    .hcss,
-    .js,
-    .fig,
+    .hcss{
+        position: absolute;
+        left: 113%;
+        top: 148%;
+    }
+    .js{
+        position: absolute;
+        left: 113%;
+        top: 187%;
+    }
+    .fig{
+        position: absolute;
+        left: 113%;
+        top: 230%;
+    }
     .ado {
-      position: relative;
-      left: auto;
-      top: auto;
+        position: absolute;
+        left: 113%;
+        top: 270%;
     }
     .t1{
       position: absolute;
@@ -1012,8 +1117,15 @@ body{
       margin-right: 10px;
       z-index: 3;
     }
-    .tg,
-    .td,
+    .tg{
+      position: absolute;
+      align-items: start;
+    }
+    .td{
+      position: absolute;
+      align-items: start;
+      left: 6%;
+    }
     .cdca,
     .cdcb,
     .cdcc,
